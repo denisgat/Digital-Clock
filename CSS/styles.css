@@ -1,0 +1,22 @@
+/* General Styles */
+html, main, body {
+    height: 100%;
+    padding: 1%;
+    
+}
+
+/* Main Styles */
+
+h1 {
+    text-align: Center;
+    text-transform: uppercase;
+}
+
+main{
+    color: white;
+}
+
+body {
+    /* background-image: url(/home/nova/Project_Files/DigitalClock/pattern.png); */
+    background-color: black;
+}
