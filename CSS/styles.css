@@ -19,22 +19,25 @@ header{
     margin-bottom: 25px;
 }
 
+body {
+    /* background-image: url(/home/nova/Project_Files/DigitalClock/pattern.png); */
+    background-color: black;
+}
+
 main{
     background-color: white;
     height: 100px;
     width: 450px;
     margin: auto;
 }
-body {
-    /* background-image: url(/home/nova/Project_Files/DigitalClock/pattern.png); */
-    background-color: black;
-}
+
 
 p {
     color: black;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     margin: auto;
+    padding-top: 5px;
 }
 
 
