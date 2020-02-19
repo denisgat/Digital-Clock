@@ -1,8 +1,12 @@
 /* General Styles */
-html, main, body {
-    height: 100%;
+html, main, body, p{
     padding: 1%;
+    color: white
     
+}
+
+html{
+    /* height: 80%; */
 }
 
 /* Main Styles */
@@ -11,12 +15,31 @@ h1 {
     text-align: Center;
     text-transform: uppercase;
 }
-
-main{
-    color: white;
+header{
+    margin-bottom: 25px;
 }
 
+main{
+    background-color: white;
+    height: 100px;
+    width: 450px;
+    margin: auto;
+}
 body {
     /* background-image: url(/home/nova/Project_Files/DigitalClock/pattern.png); */
     background-color: black;
 }
+
+p {
+    color: black;
+    text-align: center;
+    font-size: 3rem;
+    margin: auto;
+}
+
+
+footer {
+    background-color: rgba(0,0,0,.5);
+    text-align: center;
+}
+
