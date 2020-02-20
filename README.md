@@ -8,4 +8,4 @@
 
 <!-- paragraphs -->
 
-This Project is a digital clock website utilizing HTML, CSS, and JS to create a digital clock that reads hours,minutes, and seconds in realtime without refreshing. 
+This Project is a digital clock website utilizing HTML, CSS, and JS to create a digital clock that is setup as a countdown timer. 
