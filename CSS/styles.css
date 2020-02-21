@@ -5,9 +5,6 @@ html, main, body, p{
     
 }
 
-html{
-    /* height: 80%; */
-}
 
 /* Main Styles */
 
@@ -19,16 +16,44 @@ header{
     margin-bottom: 25px;
 }
 
+main{
+    display: block;
+    
+}
+
 body {
     /* background-image: url(/home/nova/Project_Files/DigitalClock/pattern.png); */
     background-color: black;
 }
+
+div{
+    margin-left: 510px;
+    display: flex;
+}
+
+label {
+    margin-top: 5px;
+    margin-right: 20px;
+    font-size: 25px;
+}
+
+input{
+    display: block;
+    height: 30px;
+    width: 75px;
+    font-size: 25px;
+    margin-right: 60px;
+    text-align: center;
+
+}
+
 
 section{
     background-color: white;
     height: 100px;
     width: 450px;
     margin: auto;
+    margin-top: 35px;
 }
 
 

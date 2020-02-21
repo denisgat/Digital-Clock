@@ -1,4 +1,8 @@
 let time = document.getElementById("clock");
+const inputHours = document.getElementById('Hours');
+const inputMinutes = document.getElementById('Minutes');
+const inputSeconds = document.getElementById('Seconds');
+
 
 
 function ftime(){
