@@ -1,20 +1,49 @@
 let time = document.getElementById("clock");
-
+let future = new Date(2020,01,20,19,49,0);
 
 function ftime(){
-    let now = new Date()
-    let hours = now.getHours() ;
-    let minutes = now.getMinutes();
-    let seconds = now.getSeconds();
+    let now = new Date();
+    let lapse = now - future
 
-    time.innerHTML = hours + ":"  + minutes + ":" + seconds
-    return hours 
-    return minutes
-    return seconds
-}
-
-setInterval(ftime,1000);
-
-
-
+    let seconds = Math.floor(Math.abs(lapse/1000))
+    let minutes = Math.floor(seconds/60);
+    let hours = Math.floor(minutes/60);
     
+    if (hours > 24){
+        hours = (hours - 24);
+    }
+
+    if (minutes > 60){
+        minutes = (minutes - hours * 60);
+    }
+       
+    if (seconds > 60){
+        seconds = (seconds - minutes*(60));
+    }
+    
+    if (seconds <= 0 && minutes <= 0 && hours <= 0 ){  
+            clearInterval(finale);
+        }
+    time.innerHTML = ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
+    
+    console.log(hours, minutes, seconds)
+   
+}
+ 
+
+   
+var finale = setInterval(ftime,1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
