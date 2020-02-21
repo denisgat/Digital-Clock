@@ -1,9 +1,14 @@
 let time = document.getElementById("clock");
-let future = new Date(2020,01,20,20,39,0);
+
 
 function ftime(){
     let now = new Date();
-    let lapse = now - future
+    let year = now.getFullYear();
+    let month = now.getMonth();
+    let day = now.getDay();
+    
+    let future = new Date(year,month,20,21,19,0);
+    let lapse = now - future;
     
     let seconds = Math.floor(-lapse/1000);
     let minutes = Math.floor(seconds/60);
@@ -14,11 +19,11 @@ function ftime(){
         hours = (hours - 24);
     }
     
-    if (minutes > 60){
+    if (minutes > 59){
         minutes = (minutes - hours * 60);
     }
     
-    if (seconds > 60){
+    if (seconds > 59){
         seconds = (seconds - minutes*(60));
     }
     
@@ -31,7 +36,8 @@ function ftime(){
 
     time.innerHTML = ("0" + hours).slice(-2) + ":" + ("0" + minutes).slice(-2) + ":" + ("0" + seconds).slice(-2);
     
-    console.log(hours, minutes, seconds)
+    // console.log(hours, minutes, seconds)
+
     
 }
 
