@@ -1,9 +1,15 @@
 let time = document.getElementById("clock");
-const inputHours = document.getElementById('Hours');
-const inputMinutes = document.getElementById('Minutes');
-const inputSeconds = document.getElementById('Seconds');
+const inputHours = document.getElementById('hours');
+const inputMinutes = document.getElementById('minutes');
+const inputSeconds = document.getElementById('seconds');
 
 
+
+if(inputHours.value !== '') {
+    const  inputHours = inputHours.value;
+    
+}
+console.log(inputHours, inputMinutes, inputSeconds);
 
 function ftime(){
     let now = new Date();
@@ -11,7 +17,7 @@ function ftime(){
     let month = now.getMonth();
     let day = now.getDay();
     
-    let future = new Date(year,month,20,21,19,0);
+    let future = new Date(year,month,20,23,05,0);
     let lapse = now - future;
     
     let seconds = Math.floor(-lapse/1000);
