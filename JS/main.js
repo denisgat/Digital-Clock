@@ -1,5 +1,5 @@
 let time = document.getElementById("clock");
-let future = new Date(2020,01,20,19,49,0);
+let future = new Date(2020,01,20,20,05,0);
 
 function ftime(){
     let now = new Date();
